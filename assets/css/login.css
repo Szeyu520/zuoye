@@ -1,56 +1,53 @@
 html, body {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    background: url("../images/login_bg.jpg") no-repeat;
+    background: url(../images/login_bg.jpg);
     background-size: cover;
-}
-
-#logo {
-    margin: 20px 0 0 40px;
-}
-
-/* 登录和注册区域 */
-#login, #register {
+    height: 100%;
+    overflow: hidden;
+  }
+  .header {
+    padding-top: 20px;
+  }
+  .center-box {
     width: 400px;
     height: 310px;
-    background-color: #fff;
+    background: #fff;
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
+    /*margin-left: -200px;*/
     transform: translate(-50%, -50%);
-}
-
-/* 默认让注册的盒子隐藏 */
-#register {
-    display: none;
-}
-
-.login_title {
-    display: block;
-    margin: 18px auto;
-}
-
-.layui-form {
-    margin: 0 30px 0;
-}
-
-.goto-register, .goto-login {
-    display: flex;
-    justify-content: flex-end;
-}
-
-/*字体图片*/
-.layui-form-item {
+  }
+  
+  .title {
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+  }
+  
+  .layui-form {
+    padding: 0 30px;
+  }
+  
+  .links {
+    /*display: flex;
+    justify-content: flex-end;*/
+    text-align: right;
+  }
+  
+  .layui-form-item {
     position: relative;
-}
-.layui-icon {
+  }
+  
+  .layui-icon {
     position: absolute;
+    left: 10px;
     top: 10px;
-    left: 5px;
-}
-.layui-input {
-    padding-left: 25px;
-}
+  }
+  
+  .layui-input {
+    padding-left: 30px;
+  }
+  
+  #registerForm {
+    display: none;
+  }
